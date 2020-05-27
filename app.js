@@ -18,5 +18,6 @@ const loyaltyRouter = require('./routes/loyalty');
 
 app.use('/', indexRouter);
 app.use('/loyalty', loyaltyRouter);
+app.use('/swaggerDoc', swaggerDocRouter)
 
 module.exports = app;
