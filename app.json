@@ -1,0 +1,7 @@
+{
+    "name": "Loyalty Swagger App",
+    "description": "A loyalty Node.js app using Express, it uses swagger for open API contract that will be consumed by salesforce external services.",
+    "repository": "https://github.com/anamitrasarkar/loyalty2.git",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["node", "express", "static", "swagger"]
+  }
