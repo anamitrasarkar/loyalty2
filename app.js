@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const indexRouter = require('./routes/index');
 const loyaltyRouter = require('./routes/loyalty');
+const swaggerDocRouter = require('./routes/swaggerDoc')
 
 app.use('/', indexRouter);
 app.use('/loyalty', loyaltyRouter);
