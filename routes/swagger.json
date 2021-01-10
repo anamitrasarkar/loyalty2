@@ -27,7 +27,7 @@
       "application/json"
     ],
     "paths": {
-      "/loyalties/{account_id}": {
+      "/accounts/{account_id}": {
         "get": {
           "operationId":"getAccountDetails",
           "summary":"Retrieves account details",
