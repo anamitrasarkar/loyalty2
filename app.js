@@ -15,10 +15,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const indexRouter = require('./routes/index');
 const loyaltyRouter = require('./routes/loyalty');
+const accountRouter = require('./routes/accountDetails');
 const swaggerDocRouter = require('./routes/swaggerDoc')
 
 app.use('/', indexRouter);
 app.use('/loyalty', loyaltyRouter);
+app.use('/accounts', accountRouter);
 app.use('/swaggerDoc', swaggerDocRouter)
 
 module.exports = app;
