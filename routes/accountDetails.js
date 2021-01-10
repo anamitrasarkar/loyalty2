@@ -18,3 +18,6 @@ router.get('/', async (req, res, next) => {
         console.error(err.message);
     }
 });
+
+
+module.exports = router;
