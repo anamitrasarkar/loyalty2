@@ -19,7 +19,7 @@ router.get('/', async (req, res, next) => {
     }
 });
 
-router.get('/accounts/:account_id', async (req, res, next) => {
+router.get('/:account_id', async (req, res, next) => {
 
     try{
         const sql = 'SELECT id, account_id, account_name, tasks, zaps, plan from account_details WHERE account_id = $1';

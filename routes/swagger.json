@@ -9,7 +9,7 @@
         "url": "https://opensource.org/licenses/MIT"
       }
     },
-    "host": "ext-svc.herokuapp.com",
+    "host": "ext-services.herokuapp.com",
     "basePath": "/accounts",
     "tags": [
       {
@@ -27,7 +27,7 @@
       "application/json"
     ],
     "paths": {
-      "/accounts/{account_id}": {
+      "/{account_id}": {
         "get": {
           "operationId":"getAccountDetails",
           "summary":"Retrieves account details",
