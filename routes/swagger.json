@@ -10,11 +10,11 @@
       }
     },
     "host": "ext-svc.herokuapp.com",
-    "basePath": "/loyalty",
+    "basePath": "/accounts",
     "tags": [
       {
-        "name": "Loyalty",
-        "description": "API for loyalty"
+        "name": "Account Details",
+        "description": "API for Account details"
       }
     ],
     "schemes": [
@@ -27,11 +27,11 @@
       "application/json"
     ],
     "paths": {
-      "/loyalties/{id_card__c}": {
+      "/loyalties/{account_id}": {
         "get": {
-          "operationId":"getLoyalty",
-          "summary":"Retrieves loyalty details",
-          "description": "Retrieves loyalty details with specific id",
+          "operationId":"getAccountDetails",
+          "summary":"Retrieves account details",
+          "description": "Retrieves account details with specific id",
           "consumes":[
             "text/plain"
           ],
@@ -40,9 +40,9 @@
           ],
           "parameters": [
             {
-              "name": "id_card__c",
+              "name": "account_id",
               "in": "path",
-              "description": "return details for the loyalty id",
+              "description": "return details for the account id",
               "required": true,
               "type": "string"
             }
@@ -50,17 +50,16 @@
           ],
           "responses": {
             "200": {
-              "description": "Loyalty user found"
+              "description": "Account found"
             },
             "400" : {
-              "description": "Invalid Id supplied"
+              "description": "Account Id supplied"
             },
             "404" : {
-              "description": "Loyalty user not found"
+              "description": "Account not found"
             }
           }
         }
       }
-  
     }
   }  
