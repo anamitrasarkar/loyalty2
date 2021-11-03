@@ -23,7 +23,7 @@ router.get('/loyalties/:id_card__c', async (req, res, next) => {
 
     try{
         const sql = 'SELECT points__c, Birthdate__c, Contact__c, category__c, id_card__c from salesforce.Loyalty_Details__c WHERE id_card__c = $1';
-        const {id_card__c  } = req.params;
+        const {id_card__c} = req.params;
         await client
             .query(sql, [id_card__c])
             .then(result => {
